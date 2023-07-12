@@ -53,7 +53,6 @@ exports.get = async (req, res, next) => {
       res.status(200).json({
         Data: data,
       });
-      console.log("data", data);
     } else {
       res.status(404).json({
         message: `cannot find product with id=${product_id}.`,
